@@ -17,7 +17,9 @@
 		width: 50%;
 		
     }
-    
+     .crossword{
+		width: 50%;
+	}
 
 </style>
 
@@ -27,15 +29,17 @@
         <div class="child"><h1>Korsord</h1></div>
         </a>
 		<div class="crossword">
+				<h2>Försommarens tidsålder</h2>
+			
+			<script src="CrosswordCompilerApp/jquery.js"></script><script src="CrosswordCompilerApp/raphael.js"></script><script src="CrosswordCompilerApp/crosswordCompiler.js"></script><script src="2.js"></script><script>
+			$(function(){ $("#CrosswordCompilerPuz2").CrosswordCompiler(CrosswordPuzzleData2,null,    {SUBMITMETHOD:"POST",PROGRESS :  "" } );});</script>
+			<div id="CrosswordCompilerPuz2" class=crossword></div>
+			
 				<h2>Genom ljuva livet</h2>
 			
 			<script src="CrosswordCompilerApp/jquery.js"></script><script src="CrosswordCompilerApp/raphael.js"></script><script src="CrosswordCompilerApp/crosswordCompiler.js"></script><script src="1.js"></script><script>
 			$(function(){ $("#CrosswordCompilerPuz1").CrosswordCompiler(CrosswordPuzzleData,null,    {SUBMITMETHOD:"POST",PROGRESS :  "" } );});</script>
-			<div id="CrosswordCompilerPuz1"></div>
-
-
-
-			<h5>Konstruktör: Lucas Svangård <br> Crossword Compiler av Antony Lewis</h5>
+			<div id="CrosswordCompilerPuz1" class=crossword></div>
 			
 		
 		</div>
