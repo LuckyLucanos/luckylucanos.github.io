@@ -1,7 +1,7 @@
 <html lang="sv">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Korsord</title>
+
 <style>
     body{
         background-color: white;
@@ -17,9 +17,12 @@
 		width: 50%;
 		
     }
-     .crossword{
+    .crossword{
 		width: 50%;
 	}
+	
+	
+	
 
 </style>
 
@@ -29,6 +32,13 @@
         <div class="child"><h1>Korsord</h1></div>
         </a>
 		<div class="crossword">
+		
+				<h2>Sensommar blues</h2>
+				
+			<script src="CrosswordCompilerApp/jquery.js"></script><script src="CrosswordCompilerApp/raphael.js"></script><script src="CrosswordCompilerApp/crosswordCompiler.js"></script><script src="3.js"></script><script>
+			$(function(){ $("#CrosswordCompilerPuz3").CrosswordCompiler(CrosswordPuzzleData3,null,    {SUBMITMETHOD:"POST",PROGRESS :  "" } );});</script>
+			<div id="CrosswordCompilerPuz3" class=crossword></div>
+			
 				<h2>Försommarens tidsålder</h2>
 			
 			<script src="CrosswordCompilerApp/jquery.js"></script><script src="CrosswordCompilerApp/raphael.js"></script><script src="CrosswordCompilerApp/crosswordCompiler.js"></script><script src="2.js"></script><script>
@@ -40,6 +50,10 @@
 			<script src="CrosswordCompilerApp/jquery.js"></script><script src="CrosswordCompilerApp/raphael.js"></script><script src="CrosswordCompilerApp/crosswordCompiler.js"></script><script src="1.js"></script><script>
 			$(function(){ $("#CrosswordCompilerPuz1").CrosswordCompiler(CrosswordPuzzleData,null,    {SUBMITMETHOD:"POST",PROGRESS :  "" } );});</script>
 			<div id="CrosswordCompilerPuz1" class=crossword></div>
+			
+
+
+			<h5>Konstruktör: Lucas Svangård <br> Crossword Compiler av Antony Lewis</h5>
 			
 		
 		</div>
