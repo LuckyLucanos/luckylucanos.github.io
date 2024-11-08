@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style>
+    body{
+        background-color: white;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .center{
+        margin: auto;
+        width: 90%;        
+    }
+	.tablebutton{
+		width: 50%
+	
+	}
+	table{
+		width: 100%;
+		margin: auto;
+	}
+	
+    .child{
+        
+		width: 50%;
+		
+    }
+    .crossword{
+		width: 50%;
+	}
+	#unselected{
+        
+		width: 95%;
+		text-align: center;
+		border-style: outset;
+		margin-left: 5%;
+		border-bottom-color: DarkGray;
+		border-right-color: DarkGray;
+		border-left-color: lightgray;
+		border-top-color:lightgray;
+		
+    }
+	
+	#selected{
+        
+		width: 95%;
+		text-align: center;
+		border-style: outset;
+		margin-right: 5%;
+		background-color: #E1E1E1;
+		
+		
+    }
+	
+	a {
+		color: black;
+	}
+	
+	#myBtn {
+		
+		position: fixed; /* Fixed/sticky position */
+		bottom: 5%; /* Place the button at the bottom of the page */
+		right: 5%; /* Place the button 30px from the right */
+		z-index: 99; /* Make sure it does not overlap */
+		color: black;
+		cursor: pointer; /* Add a mouse pointer on hover */
+		font-size: 18px; /* Increase font size */
+	}
+	
+
+</style>
+
+</head>
+<body>
+	<!-- Var snäll, kolla inte här! Och om du gör det: Fölåt!-->
+	<a id="top" href="#"></a>
+    <div class="center">
+		<table>
+		<thead>
+		  <tr>
+			<th class="tablebutton"><div id="selected" class="button"><h1>Korsord</h1></div></th>
+			<th class="tablebutton"><a href="text.html" style="text-decoration:none"><div id="unselected" class="button" ><h1>Text</h1></div></a></th>
+		  </tr>
+		</thead>
+		</table>	
+					<h2>Oidipala-festivalen</h2>
+				<script src="CrosswordCompilerApp/jquery.js"></script><script src="CrosswordCompilerApp/raphael.js"></script><script src="CrosswordCompilerApp/crosswordCompiler.js"></script><script src="5.js"></script><script>
+				$(function(){ $("#CrosswordCompilerPuz5").CrosswordCompiler(CrosswordPuzzleData5,null,    {SUBMITMETHOD:"POST",PROGRESS :  "" } );});</script>
+				<div id="CrosswordCompilerPuz5" class=crossword></div>
+					<h2>Spela Shoreline!</h2>
+				<script src="CrosswordCompilerApp/jquery.js"></script><script src="CrosswordCompilerApp/raphael.js"></script><script src="CrosswordCompilerApp/crosswordCompiler.js"></script><script src="4.js"></script><script>
+				$(function(){ $("#CrosswordCompilerPuz4").CrosswordCompiler(CrosswordPuzzleData4,null,    {SUBMITMETHOD:"POST",PROGRESS :  "" } );});</script>
+				<div id="CrosswordCompilerPuz4" class=crossword></div>
+				
+					<h2>Sensommar blues</h2>
+					
+				<script src="CrosswordCompilerApp/jquery.js"></script><script src="CrosswordCompilerApp/raphael.js"></script><script src="CrosswordCompilerApp/crosswordCompiler.js"></script><script src="3.js"></script><script>
+				$(function(){ $("#CrosswordCompilerPuz3").CrosswordCompiler(CrosswordPuzzleData3,null,    {SUBMITMETHOD:"POST",PROGRESS :  "" } );});</script>
+				<div id="CrosswordCompilerPuz3" class=crossword></div>
+				
+					<h2>Försommarens tidsålder</h2>
+				
+				<script src="CrosswordCompilerApp/jquery.js"></script><script src="CrosswordCompilerApp/raphael.js"></script><script src="CrosswordCompilerApp/crosswordCompiler.js"></script><script src="2.js"></script><script>
+				$(function(){ $("#CrosswordCompilerPuz2").CrosswordCompiler(CrosswordPuzzleData2,null,    {SUBMITMETHOD:"POST",PROGRESS :  "" } );});</script>
+				<div id="CrosswordCompilerPuz2" class=crossword></div>
+				
+					<h2>Genom ljuva livet</h2>
+				
+				<script src="CrosswordCompilerApp/jquery.js"></script><script src="CrosswordCompilerApp/raphael.js"></script><script src="CrosswordCompilerApp/crosswordCompiler.js"></script><script src="1.js"></script><script>
+				$(function(){ $("#CrosswordCompilerPuz1").CrosswordCompiler(CrosswordPuzzleData,null,    {SUBMITMETHOD:"POST",PROGRESS :  "" } );});</script>
+				<div id="CrosswordCompilerPuz1" class=crossword></div>
+				
+
+
+				<h5>Konstruktör: Lucas Svangård <br> Crossword Compiler av Antony Lewis</h5>
+		
+
+
+
+		
+		
+    </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+		
+		
+			<script>
+				// Get the button
+				let mybutton = document.getElementById("myBtn");
+
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+				  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				  } else {
+					mybutton.style.display = "none";
+				  }
+				}
+
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+				  document.body.scrollTop = 0;
+				  document.documentElement.scrollTop = 0;
+				}
+				window.onload = function() {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+				};
+
+				
+				
+			</script>    
+
+</body>
+</html>
